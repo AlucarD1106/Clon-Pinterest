@@ -1,0 +1,199 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+   display: flex;
+   flex-direction: column;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw;
+    height: 80px;
+    font-size: 20px;
+    padding: 0px 16px;
+    position: fixed;
+    background-color: white;
+}
+
+header nav img#iconopinterest {
+    width: 55px;
+    height: 32px;
+    padding: 4px;
+}
+
+header nav img#iconopinterest:hover {
+    background-color: red;
+    border-radius: 150px;
+}
+
+.item{
+    display: flex;
+}
+
+.item li {
+    list-style: none;
+    padding: 0px 12px;
+}
+
+.item li:hover{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.buscador {
+    flex-grow: 1;
+    height: 48px;
+    background-color: lightgrey;
+    border-radius: 30px;
+
+}
+
+.buscador:hover {
+    background-color: lightgrey;
+}
+
+.buscador:focus-within {
+    border: 2px solid black;
+}
+
+.finder {
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+
+.finder input {
+    border: none;
+    outline: none;
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 0px 8px 0px 0px;
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+.derecha{
+    display: flex;
+}
+
+.derecha img{
+    width: 55px;
+    height: 32px;
+    padding: 6px;
+}
+
+.derecha img:hover {
+    background-color: lightgrey;
+    border-radius: 150px;
+    cursor: pointer;
+}
+
+
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    width: 95%;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.columnas{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 15%;
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.card-image img{
+    border-radius: 25px;
+    width: 90%;
+}
+
+.card-image:hover{
+    filter: brightness(70%);
+}
+
+.card-image:hover > * {
+    visibility: visible;
+    display: inline;
+}
+
+
+.Guardar {
+    position: absolute;
+    font-size: 20px;
+    background-color: red;
+    color: white;  
+    padding: 13px 15px; 
+    border-radius: 30px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+
+.cont .Guardar:hover {
+    background-color: red;
+    filter: brightness(60%);
+}
+
+.puntos{
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+}
+.puntos img{
+    padding: 5px;
+    width: 30px;
+    height: 30px;   
+}
+
+.puntos:hover{
+    filter: brightness(70%);
+}
+
+.puntos:hover > * {
+    visibility: visible;
+    display: inline;
+}
+
+@media screen and (max-width: 800px) {
+    .main .columnas {   
+        width: 30%;
+    }
+
+  }
+
+  @media screen and (max-width: 500px) {
+    .main .columnas {   
+        width: 50%;
+    }
+    .buscador{
+        height: 10;
+    }
+
+  } 
+
+  @media screen and (max-width: 369px) {
+    .main .columnas {   
+        width: 95%;
+    }
+  }
